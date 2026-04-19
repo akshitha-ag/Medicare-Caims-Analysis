@@ -31,3 +31,32 @@
 - Provider outlier analysis (BQ#2) should focus on the top 100-200 procedures 
   where benchmarking has statistical power
 - Geographic variation (BQ#3) most meaningful on the top ~50 procedures
+
+## Day 2 — Part 2: Outlier Analysis (BQ #2)
+
+### Methodology
+- Peer group: specialty + state + procedure
+- Minimum peer group size: 10 (for statistical validity)
+- Outlier threshold: >2 std devs above peer mean
+- Two metrics: services_per_beneficiary (over-utilization), avg_submitted_charge (over-billing)
+- Scoped to top 100 procedures by spend
+
+### Key findings
+1. 6.76% outlier rate (vs 2.5% expected for normal distribution) — 
+   indicates right-skewed billing data, which is realistic
+2. HIGH VOLUME flag = $4.09B flagged spend
+   HIGH CHARGE flag = $1.62B flagged spend
+   → Over-utilization drives 2.5x more cost impact than over-billing
+   → INSIGHT: Medicare's fixed fee schedules limit charge inflation; volume 
+     is the real cost lever
+3. Q4262 (wound dressing) repeatedly flagged among Nurse Practitioners 
+   in TX/FL — pattern worth investigating
+4. Ophthalmology: only 5,131 flagged providers but $578M flagged spend, 
+   driven by expensive drug injections (aflibercept/Eylea)
+5. Internal Medicine tops specialty outlier spend ($737M) — driven by 
+   high-volume E/M visits
+
+### Implication for intervention ROI (BQ #4)
+A targeted audit program focused on the top 4,753 "HIGH VOLUME + HIGH CHARGE" 
+flags would cover $164M; expanding to all HIGH VOLUME flags covers $4.09B.
+Cost-recovery ROI depends on audit cost per provider (~$500-2000 industry avg).
