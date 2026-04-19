@@ -60,3 +60,31 @@
 A targeted audit program focused on the top 4,753 "HIGH VOLUME + HIGH CHARGE" 
 flags would cover $164M; expanding to all HIGH VOLUME flags covers $4.09B.
 Cost-recovery ROI depends on audit cost per provider (~$500-2000 industry avg).
+
+## Day 2 — Part 3: Geographic Variation (BQ #3)
+
+### Methodology
+- Used `avg_medicare_standardized` (removes GPCI geographic adjustments) 
+  to isolate UNWARRANTED variation
+- Min 20 providers per state-procedure for data stability
+- Metric: P90/P10 ratio of state-level standardized payments
+- Scoped to top 100 procedures
+
+### Key findings
+1. Nuclear medicine shows EXTREME variation:
+   - HCPCS 78431 (nuclear heart blood flow): 15.14x between p90 and p10
+   - HCPCS 78815 (nuclear PET skull-to-thigh): 5.09x
+   - These are after geographic cost adjustments — pure billing pattern variance
+2. Drug prices are nearly uniform (1-2% variation) due to ASP regulation
+   EXCEPT "unclassified drugs" (J3490) which shows 5.58x variation
+3. State-level overpaying leaders (standardized basis):
+   - PR: +13.3% above national average
+   - FL/MD/DC/NJ: +7-8% above
+4. Even routine E/M visit (99214): ~10% variation across states
+   suggesting variation extends beyond specialized procedures
+
+### Policy implications
+- Drug regulation (ASP) works → suggests procedure payment standardization 
+  could reduce $B in variance
+- Nuclear medicine deserves its own audit focus
+- "Unclassified" codes are a loophole worth investigating
