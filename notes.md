@@ -88,3 +88,38 @@ Cost-recovery ROI depends on audit cost per provider (~$500-2000 industry avg).
   could reduce $B in variance
 - Nuclear medicine deserves its own audit focus
 - "Unclassified" codes are a loophole worth investigating
+
+## Day 2 — Part 4: Intervention ROI (BQ #4) — PROJECT CAPSTONE
+
+### Three modeled interventions with conservative assumptions
+
+#### Intervention C: Prior Authorization on HIGH VOLUME outliers
+- Targets: 129,211 flagged provider-procedure rows
+- Scope: $4.09B Medicare spend
+- Assumption: 10% volume reduction (peer-reviewed range: 5-15%)
+- Admin cost: $50/auth request
+- **Net estimated savings: $402M annually**
+
+#### Intervention B: Geographic Payment Standardization  
+- Targets: 7 procedures with >=2x P90/P10 ratio
+- Scope: $1.65B affected spend
+- Method: Cap payments at national median
+- Cost: $0 (policy change, not audit)
+- **Net estimated savings: $381M annually**
+
+#### Intervention A: Targeted Provider Audit (HIGH VOLUME + HIGH CHARGE)
+- Targets: 4,753 dual-flagged outliers
+- Scope: $163M flagged spend
+- Assumption: 15% recovery rate (CMS RAC program norm: 8-25%)
+- Cost: $1,500/audit
+- **Net estimated savings: $17M annually**
+
+### Combined savings potential: ~$801M annually
+(Interventions are largely non-overlapping — they target different patterns:
+individuals, pricing rules, volume)
+
+### Caveats to document in README / Executive Brief
+- Estimates use published industry assumptions, not actuarial models
+- Assumes interventions are implemented optimally
+- Real recovery rates vary by procedure type and provider sophistication
+- Provider behavioral response (coding shifts, specialty changes) not modeled
