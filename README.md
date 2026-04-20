@@ -4,7 +4,7 @@
 
 🔗 **[View Interactive Dashboard on Tableau Public →](https://public.tableau.com/app/profile/akshitha.a2492/viz/MedicareClaimsCostAnalysis2023/Dashboard1)**
 
-![Dashboard Preview](images/dashboard_preview.png)
+![Dashboard Preview](dashboard_preview.png)
 
 ---
 
