@@ -1,5 +1,4 @@
 # Medicare Claims Cost Analysis
-
 **An analysis of 9.66 million rows of CMS Medicare provider claims data to identify cost drivers, provider outliers, geographic payment variation, and estimate the dollar impact of three targeted interventions.**
 
 🔗 **[View Interactive Dashboard on Tableau Public →](https://public.tableau.com/app/profile/akshitha.a2492/viz/MedicareClaimsCostAnalysis2023/Dashboard1)**
